@@ -32,7 +32,7 @@ void loop(){
 
     int h, l;
 
-    writeRegister(0x20, 0x27)
+    writeRegister(0x20, 0x27);
 
     l = readRegister(0x28);
     h = readRegister(0x29);
@@ -48,6 +48,5 @@ void loop(){
 
     sprintf(str, "%d, %d, %d", x,y,z);
     Serial.println(str);
-    sleep(1000);
+    delay(1000);
 }
-
